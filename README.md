@@ -6,7 +6,7 @@
 
 1. Using the terminal go to the project directory, execute the following commands:
     1. ```.\gradlew clean bootJar```
-    2. ```docker-compose up```
+    2. ```docker-compose up --build```
     
 ```.\gradlew clean bootJar``` Generates Jar file using the gradle wrapper. 
 
