@@ -1,6 +1,6 @@
 # Keep in mind
+[![Build Status](https://travis-ci.com/team-bash/keep-in-mind.svg?branch=develop)](https://travis-ci.com/team-bash/keep-in-mind)
 
-[![Build Status](https://travis-ci.com/JoshuaPuello/keep-in-mind-backend.svg)](https://travis-ci.com/JoshuaPuello/keep-in-mind-backend)
 
 ## Steps to execute
 
