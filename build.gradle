@@ -7,6 +7,7 @@ plugins {
 group = 'com.teambash'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
+def springFoxVersion = '2.9.2'
 
 configurations {
 	compileOnly {
@@ -21,6 +22,9 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	compile group: 'org.modelmapper', name: 'modelmapper', version: '0.7.5'
+	compile group: 'io.springfox', name: 'springfox-swagger-ui', version: springFoxVersion
+	compile group: 'io.springfox', name: 'springfox-swagger-ui', version: springFoxVersion
 	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'com.h2database:h2'
 	runtimeOnly 'org.postgresql:postgresql'
