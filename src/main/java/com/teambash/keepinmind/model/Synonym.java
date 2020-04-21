@@ -1,5 +1,6 @@
 package com.teambash.keepinmind.model;
 
+import lombok.Builder;
 import lombok.Data;
 
 import javax.persistence.Column;
@@ -12,6 +13,7 @@ import javax.persistence.Table;
 import java.util.HashSet;
 import java.util.Set;
 
+@Builder
 @Data
 @Entity
 @Table(name = "SYNONYM")
