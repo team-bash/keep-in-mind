@@ -18,9 +18,13 @@ import java.util.stream.Collectors;
 @Log
 public class SynonymServiceImp implements SynonymService {
 
-  @Autowired private SynonymRepository synonymRepository;
-
-  @Autowired private ModelMapper modelMapper;
+  private final SynonymRepository synonymRepository;
+  private final ModelMapper modelMapper;
+  
+  public SynonymServiceImp(SynonymRepository synonymRepository, ModelMapper modelMapper) {
+    this.synonymRepository = synonymRepository;
+    this.modelMapper = modelMapper;
+  }
 
   @Override
   public SynonymDto createSynonym(SynonymDto dto) {
