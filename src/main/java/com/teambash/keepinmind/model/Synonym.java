@@ -27,4 +27,7 @@ public class Synonym {
 
     @OneToMany(mappedBy = "synonym")
     private Set<WordSynonym> wordSynonyms = new HashSet<>();
+    public Synonym(){
+
+    }
 }
