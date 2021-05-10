@@ -29,7 +29,6 @@ public class WordServiceImp implements WordService {
     if (wordByContext.isPresent()) {
       return wordByContext.get();
     }
-    log.severe("New word");
     Word newWord = new Word();
     BeanUtils.copyProperties(dto, newWord);
 

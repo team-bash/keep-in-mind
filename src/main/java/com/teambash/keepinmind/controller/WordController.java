@@ -3,6 +3,7 @@ package com.teambash.keepinmind.controller;
 
 import com.teambash.keepinmind.service.impl.WordServiceImp;
 import com.teambash.keepinmind.shared.dto.WordDto;
+import com.teambash.keepinmind.shared.dto.WrapperListResponse;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -28,7 +29,7 @@ public class WordController {
     }
 
     @GetMapping
-    public List<WordDto> getAllWords(){
-        return this.wordServiceImp.findAllWords();
+    public WrapperListResponse<WordDto> getAllWords(){
+        return new WrapperListResponse<>(this.wordServiceImp.findAllWords());
     }
 }
